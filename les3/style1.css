@@ -21,3 +21,20 @@ body {
     padding: 0px;
 
 }
+#viewport {
+    position: relative;
+    height: 300px;
+}
+
+#fotoslider {
+    position: absolute;
+    left: 0;
+    /* ANDERE REGELS GEWOON LATEN STAAN! */
+}
+
+body {
+    background-color:lightblue;
+}
+div {
+    background-color: red;
+}
