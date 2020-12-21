@@ -10,11 +10,11 @@ let fotonummer, fotobreedte, aantalfotos, fotoslider;
            
             aantalfotos = fotoslider.children.length;
             console.log(aantalfotos);
-            volgendeKnop.addEventListener('click', volgendeFoto);
+            volgendeKnop.addEventListener('click',volgendeFoto);
         }
 
         function volgendeFoto(){
-            alert('volgende foto');
+            //alert('volgende foto');
             fotonummer += 1;
             if (fotonummer === aantalfotos) {
                 fotonummer = 0;
@@ -22,11 +22,7 @@ let fotonummer, fotobreedte, aantalfotos, fotoslider;
             let afstandNaarLinks = -1 * (fotonummer * fotobreedte)
             fotoslider.style.left = afstandNaarLinks + "px";
         }
-        
-
 
         
-
-
-
         window.addEventListener("DOMContentLoaded", setupFotoslider);
+        
