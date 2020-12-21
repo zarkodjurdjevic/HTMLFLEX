@@ -1,6 +1,8 @@
 #echtefotoslider {
     display: flex;
     flex-direction: row;
+    
+
 }
 
 
@@ -23,7 +25,7 @@ img {
     height: 200px;
     overflow: hidden;
     width: 200px;
-    
+    box-shadow: black;
     
 }
 
@@ -31,8 +33,41 @@ img {
     position: absolute;
     left: 0;
     /* ANDERE REGELS GEWOON LATEN STAAN! */
+    transition-property: left;
+    transition-duration: 400ms;
+    transition-timing-function: step-end;
+
 }
 
 body {
     background-color:lightblue;
+}
+
+#midden {
+    display: flex;
+    flex-direction: center;
+    justify-content: right;
+    align-items: center;
+    padding: 100px;
+    margin: 100; 
+    
+
+}
+
+#besturing {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    padding: 400px;
+}
+
+#controls {
+    background-color: red;
+    color: red;
+    padding: 20px;
+    font-size: large;
+    border: black;
+    margin: auto;
+
 }
